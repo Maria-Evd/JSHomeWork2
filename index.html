@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork2</title>
+</head>
+<body>
+    <script>
+        /*Задание 1
+        Создать переменные num1, num2 которые пользователь вводит с клавиатуры
+        Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3.*/
+
+        /* Решение задание 1:
+        let num1 = +prompt(`введите первое число`);
+        let num2 = +prompt(`введите второе число`);
+        if (num1 <= 1 && num2 >= 3) {
+            alert(`первое число меньше или равно 1, а второе число больше или равно 3`)
+        } else {
+            alert(`первое число не меньше или равно 1, а второе число не больше или равно 3`)
+        } */
+
+
+        /*Задание 2
+        Перепишите код к тернарному оператору
+
+        let test = true;
+        if (test === true) {
+            console.log('+++');
+        } else {
+            console.log('---');
+        } */
+
+        /*Решение задание 2:
+        let test = true;
+        (test === true) ? console.log('+++') : console.log('---');*/
+
+        /*Задание 3
+        В переменной day лежит какое-то число из интервала от 1 до 31. 
+        Определите в какую декаду месяца попадает это число (в первую, вторую или третью).*/
+
+        /*Решение задание 3:
+        let day = +prompt(`введите число от 1 до 31`);
+        if (day >= 1 && day <= 10) {
+            alert(`это число первой декады месяца`);
+        } else if (day >= 11 && day <= 20) {
+            alert(`это число второй декады месяца`);
+        } else if (day >= 21 && day <= 31){
+            alert(`это число третьей декады месяца`);
+        } else {
+            alert(`в месяце нет такого числа`);
+        } */
+
+        /*Задание 4 
+        от пользователя получить число.
+        Необходимо вывести разряды числа, а именно: количество сотен, десятков и единиц.*/
+
+        /*Решение задание 4:
+        let num = +prompt(`введите число`);
+        if (num >= 10 && num <= 99) {
+            let ten = Math.trunc(num  / 10);
+            let unit = (num % 100) % 10;
+            console.log(`количество  десятков ${ten}, единиц ${unit}`);
+    
+        } else if (num >= 100 && num <= 999) {
+            let hundred = Math.trunc(num / 100);
+            let ten = Math.trunc((num % 100) / 10);
+            let unit = (num % 100) % 10;
+            console.log(`количество сотен ${hundred}, десятков ${ten} и единиц ${unit}`);
+        } else {
+            num = num % 1000;
+            let hundred = Math.trunc(num / 100);
+            let ten = Math.trunc((num % 100) / 10);
+            let unit = (num % 100) % 10;
+            console.log(`количество сотен ${hundred}, десятков ${ten} и единиц ${unit}`);
+        }*/
+        
+
+    </script>
+</body>
+</html>
